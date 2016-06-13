@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自动累加计算</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/autoAdd.css">
+</head>
+<body>
+	<h2>自动累加计算</h2>
+	<button>添加新的记录</button>
+
+	<div>
+		<a href="javascript:;" class="minus">-</a> <span>0</span><a href="javascript:;" class="plus">+</a>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script>
+		$(function(){
+			$('.minus').click(function(){
+				var self = $(this), p = self.parent(), span = p.find('span'), val = ~~span.text();
+				if(val > 0){
+					span.text(--val);
+				}
+				return false;
+			});
+			$('.plus').click(function(){
+				var self = $(this), p = self.parent(), span = p.find('span'), val = ~~span.text();
+				span.text(++val);
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
