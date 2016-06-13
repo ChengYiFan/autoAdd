@@ -2,17 +2,50 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>自动累加计算</title>
-	<link rel="stylesheet" href="css/normalize.css">
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/autoAdd.css">
 </head>
 <body>
-	<h2>自动累加计算</h2>
-	<button>添加新的记录</button>
-
-	<div>
-		<a href="javascript:;" class="minus">-</a> <span>0</span><a href="javascript:;" class="plus">+</a>
+	<div class="container">
+		<h2>自动累加计算</h2>
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				累加器
+			</div>
+			<!-- <div class="panel-body">
+				<div>
+					
+				</div>
+			</div> -->
+			<ul class="list-group">
+				<li class="list-group-item">
+					<button class="minus btn btn-success">
+						<i class="glyphicon glyphicon-minus"></i>
+					</button>
+					<span class="txt">0</span>
+					<button class="plus btn btn-success">
+						<i class="glyphicon glyphicon-plus"></i>
+					</button>
+				</li>
+				<li class="list-group-item">
+					<button class="minus btn btn-success">
+						<i class="glyphicon glyphicon-minus"></i>
+					</button>
+					<span class="txt">0</span>
+					<button class="plus btn btn-success">
+						<i class="glyphicon glyphicon-plus"></i>
+					</button>
+				</li>
+			</ul>
+		</div>
+		
 	</div>
+	
+
+	
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script>
 		$(function(){
