@@ -1,1 +1,5 @@
-.txt{min-width:60px;display: inline-block;text-align: center;}
+.txt{min-width:60px;display: inline-block;text-align: center;font-size:24px;}
+.list-group-item{
+	padding-top:30px;
+	padding-bottom:30px;
+}
