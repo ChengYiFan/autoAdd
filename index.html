@@ -57,12 +57,24 @@
 				return false;
 			});
 			$('.plus').click(function(){
+				// var self = $(this), p = self.parent(), span = p.find('span'), val = ~~span.text();
+				// span.text(++val);
+				// return false;
+			});
+		});
+		
+	</script>
+	
+	<script>
+		$(function(){
+			$('.plus').bind('tap',function() {
+				/* Act on the event */
 				var self = $(this), p = self.parent(), span = p.find('span'), val = ~~span.text();
 				span.text(++val);
 				return false;
 			});
 		});
-		
 	</script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 </body>
 </html>
