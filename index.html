@@ -48,27 +48,36 @@
 	
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script>
+		// $(function(){
+			// $('.minus').click(function(){
+				// var self = $(this), p = self.parent(), span = p.find('span'), val = ~~span.text();
+				// if(val > 0){
+				// 	span.text(--val);
+				// }
+				// return false;
+			// });
+			// $('.plus').click(function(){
+				// var self = $(this), p = self.parent(), span = p.find('span'), val = ~~span.text();
+				// span.text(++val);
+				// return false;
+		// 	});
+		// });
+		
+	</script>
+	
+	<script>
+		$(document).bind("mobileinit", function() {
+	      	$.mobile.autoInitializePage = false;
+	    });
 		$(function(){
-			$('.minus').click(function(){
+			$('.minus').bind('tap',function(){
 				var self = $(this), p = self.parent(), span = p.find('span'), val = ~~span.text();
 				if(val > 0){
 					span.text(--val);
 				}
 				return false;
 			});
-			$('.plus').click(function(){
-				// var self = $(this), p = self.parent(), span = p.find('span'), val = ~~span.text();
-				// span.text(++val);
-				// return false;
-			});
-		});
-		
-	</script>
-	
-	<script>
-		$(function(){
 			$('.plus').bind('tap',function() {
-				/* Act on the event */
 				var self = $(this), p = self.parent(), span = p.find('span'), val = ~~span.text();
 				span.text(++val);
 				return false;
