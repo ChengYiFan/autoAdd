@@ -1,5 +1,6 @@
 .txt{min-width:60px;display: inline-block;text-align: center;font-size:24px;}
 .list-group-item{
-	padding-top:30px;
-	padding-bottom:30px;
+	padding-top:34px;
+	padding-bottom:34px;
 }
+.text-success{font-size:20px;margin-right:40px;}
