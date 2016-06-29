@@ -56,6 +56,7 @@
 	      	$.mobile.autoInitializePage = false;
 	    });
 		$(function(){
+			//使用tap事件替换click事件
 			$('.minus').bind('tap',function(){
 				var self = $(this), p = self.parent(), span = p.find('span'), val = ~~span.text();
 				if(val > 0){
@@ -70,6 +71,7 @@
 			});
 		});
 	</script>
+	<!-- 引入jquery.mobile.js-->
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 </body>
 </html>
